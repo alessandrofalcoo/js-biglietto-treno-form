@@ -16,17 +16,16 @@ generate.addEventListener('click', function () {
     const overAge = document.getElementById('overage').value;
     const underage = document.getElementById('underage').value;
     const over = document.getElementById('over_sixtyFive').value;
-    //    let recapName = document.getElementById('passenger_name').value;
-    let recapPrice = document.getElementById('ticket_price').innerHTML;
-    console.log(recapPrice);
-
+    let recapName = document.getElementById('passenger_name');
+    let recapPrice = document.getElementById('ticket_price');
+    recapName.innerHTML = recapName;
 
     if (selectAge == over) {
         recapPrice.innerHTML = Number(over_Ticket.toFixed(2));
     } else if (selectAge == underage) {
-        Number(underAge_Ticket.toFixed(2));
+        recapPrice.innerHTML = Number(underAge_Ticket.toFixed(2));
     } else if (selectAge == overAge) {
-        Number(ticketPrice.toFixed(2));
+        recapPrice.innerHTML = Number(ticketPrice.toFixed(2));
 
     }
 })
