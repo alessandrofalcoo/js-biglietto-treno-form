@@ -20,7 +20,7 @@ generate.addEventListener('click', function () {
     let recapName = document.getElementById('passenger_name');
     let recapPrice = document.getElementById('ticket_price');
     console.log(username);
-    recapName.innerHTML = username
+    recapName.innerHTML = username;
 
     if (selectAge == over) {
         recapPrice.innerHTML = Number(over_Ticket.toFixed(2));

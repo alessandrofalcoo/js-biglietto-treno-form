@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.recap-container{
+    width: 80%;
+    margin: auto;
+}
+
+.main{
+    background-color: #2D336B;
+}
+
+.card_header{
+    padding: 1rem;
+    border: solid #64666e 1px;
+    color: black; 
+}
+
+
+
+.card-body{
+    background-color: #757785;
+}

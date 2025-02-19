@@ -16,61 +16,74 @@
 </head>
 
 <body>
-    <div class="container-fluid px-5">
-        <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div class="container main">
 
-        <h2>Nome cognome</h2>
-        <div class="mb-3 py-2">
-            <label for="username" class="form-label"></label>
-            <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId"
-                placeholder="" value="" />
-        </div>
-        <h2>Km da percorrere</h2>
-        <div class="mb-3">
-            <label for="km" class="form-label"></label>
-            <input type="number" class="form-control" name="km" id="km" aria-describedby="helpId" placeholder=""
-                value="" />
-        </div>
-        <h2>Fascia d'età</h2>
-        <div class="mb-3">
-            <label for="age" class="form-label"></label>
-            <select class="form-select form-select-lg" name="age" id="age" value="">
-                <option started value=""></option>
-                <option value="overage" id="overage" value="">Maggiorenne</option>
-                <option value="underage" id="underage" value="">Minorenne</option>
-                <option value="over_sixtyFive" id="over_sixtyFive" value="">Over 65</option>
-            </select>
-        </div>
-        <button id="generate">Genera</button>
-    </div>
-    <div class="px-5 py-5">
-        <h3>Dettagli Passeggero</h3>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body bg-secondary">
-                        <h3 class="card-title">Nome Passeggero</h3>
-                        <p><strong id="passenger_name" value=""></strong></p>
-                    </div>
-                    <div class="px-2">
+        <div class="container px-5">
+            <div class="py-4">
 
-                        <h4>Offerta</h4>
-                        <p>Biglietto standard</p>
-                        <h4>Carrozza</h4>
-                        <p>5</p>
-                        <h4>Codice CP</h4>
-                        <p>92911</p>
-                        <h4>Costo biglietto</h4>
-                        <p id="ticket_price" value=""></p>
+                <h1>Calcola il prezzo del tuo biglietto</h1>
+            </div>
+
+            <h2>Nome cognome</h2>
+            <div class="mb-3 py-2">
+                <label for="username" class="form-label"></label>
+                <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId"
+                    placeholder="" value="" />
+            </div>
+            <h2>Km da percorrere</h2>
+            <div class="mb-3">
+                <label for="km" class="form-label"></label>
+                <input type="number" class="form-control" name="km" id="km" aria-describedby="helpId" placeholder=""
+                    value="" />
+            </div>
+            <h2>Fascia d'età</h2>
+            <div class="mb-3">
+                <label for="age" class="form-label"></label>
+                <select class="form-select form-select-lg" name="age" id="age" value="">
+                    <option started style="color: black;" value="">Seleziona</option>
+                    <option style="color: black;" value="overage" id="overage" value="">Maggiorenne</option>
+                    <option style="color: black;" value="underage" id="underage" value="">Minorenne</option>
+                    <option style="color: black;" value="over_sixtyFive" id="over_sixtyFive" value="">Over 65</option>
+                </select>
+            </div>
+            <button class="btn btn-warning" id="generate">Genera</button>
+        </div>
+        <div class="px-5 py-5 recap-container">
+            <h3 class="text-center mb-4">Dettagli Passeggero</h3>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                </div>
+                                <div class="text-center">
+                                    <div class="card_header bg-warning">
+                                        <h3 class="card-title">Nome Passeggero</h3>
+                                        <p><strong style="color: black;" id="passenger_name" value=""></strong></p>
+                                    </div>
+                                    <div class="card-body">
+
+                                        <h4>Offerta</h4>
+                                        <p>Biglietto standard</p>
+                                        <h4>Carrozza</h4>
+                                        <p>5</p>
+                                        <h4>Codice CP</h4>
+                                        <p>92911</p>
+                                        <h4>Costo biglietto</h4>
+                                        <p id="ticket_price" value=""></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
     </div>
-
-
     </div>
 
 
