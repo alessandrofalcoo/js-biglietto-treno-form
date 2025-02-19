@@ -22,15 +22,16 @@
         <h2>Km da percorrere</h2>
         <div class="mb-3">
             <label for="km" class="form-label"></label>
-            <input type="number" class="form-control" name="km" id="km" aria-describedby="helpId" placeholder="" />
+            <input type="number" class="form-control" name="km" id="km" aria-describedby="helpId" placeholder="" value="" />
         </div>
         <h2>Fascia d'età</h2>
         <div class="mb-3">
             <label for="age" class="form-label"></label>
             <select class="form-select form-select-lg" name="age" id="age">
-                <option value="overage" id="overage">Maggiorenne</option>
-                <option value="underage" id="underage">Minorenne</option>
-                <option value="over_sixtyFive" id="over_sixtyFive">Over 65</option>
+                <option started value=""></option>
+                <option value="overage" id="overage" value="">Maggiorenne</option>
+                <option value="underage" id="underage" value="">Minorenne</option>
+                <option value="over_sixtyFive" id="over_sixtyFive" value="">Over 65</option>
             </select>
         </div>
         <button id="generate">Genera</button>
