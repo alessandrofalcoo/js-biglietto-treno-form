@@ -1,9 +1,9 @@
 const nameEl = document.getElementById('name');
 
-
 const generate = document.querySelector('button')
 
 generate.addEventListener('click', function () {
+
 
     const kmEl = Number(document.getElementById('km').value);
     const ticketPrice = 0.21 * kmEl;
@@ -16,15 +16,19 @@ generate.addEventListener('click', function () {
     const overAge = document.getElementById('overage').value;
     const underage = document.getElementById('underage').value;
     const over = document.getElementById('over_sixtyFive').value;
-/*     let recapName = document.getElementById('passenger_name').value;
- */    let recapPrice = document.getElementById('ticket_price').value;
+    //    let recapName = document.getElementById('passenger_name').value;
+    let recapPrice = document.getElementById('ticket_price').innerHTML;
+    console.log(recapPrice);
+
 
     if (selectAge == over) {
-        recapPrice = Number(over_Ticket.toFixed(2));
+        recapPrice.innerHTML = Number(over_Ticket.toFixed(2));
     } else if (selectAge == underage) {
-        recapPrice = Number(underAge_Ticket.toFixed(2)).innerHTML;
+        Number(underAge_Ticket.toFixed(2));
     } else if (selectAge == overAge) {
-        recapPrice = Number(ticketPrice.toFixed(2));
+        Number(ticketPrice.toFixed(2));
 
     }
 })
+
+
