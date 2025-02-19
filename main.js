@@ -16,9 +16,11 @@ generate.addEventListener('click', function () {
     const overAge = document.getElementById('overage').value;
     const underage = document.getElementById('underage').value;
     const over = document.getElementById('over_sixtyFive').value;
+    const username = document.getElementById('username').value;
     let recapName = document.getElementById('passenger_name');
     let recapPrice = document.getElementById('ticket_price');
-    recapName.innerHTML = recapName;
+    console.log(username);
+    recapName.innerHTML = username
 
     if (selectAge == over) {
         recapPrice.innerHTML = Number(over_Ticket.toFixed(2));
