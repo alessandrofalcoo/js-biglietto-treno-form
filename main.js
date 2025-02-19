@@ -12,17 +12,19 @@ generate.addEventListener('click', function () {
     const over_Discount = (ticketPrice / 100) * 40;
     const underAge_Ticket = ticketPrice - underAge_Discount;
     const over_Ticket = ticketPrice - over_Discount;
-    let selectAge = document.getElementById('age').value;
-    let overAge = document.getElementById('overage').value;
-    let underage = document.getElementById('underage').value;
-    let over = document.getElementById('over_sixtyFive').value;
+    const selectAge = document.getElementById('age').value;
+    const overAge = document.getElementById('overage').value;
+    const underage = document.getElementById('underage').value;
+    const over = document.getElementById('over_sixtyFive').value;
+/*     let recapName = document.getElementById('passenger_name').value;
+ */    let recapPrice = document.getElementById('ticket_price').value;
 
     if (selectAge == over) {
-        console.log(Number(over_Ticket.toFixed(2)));
+        recapPrice = Number(over_Ticket.toFixed(2));
     } else if (selectAge == underage) {
-        console.log(Number(underAge_Ticket.toFixed(2)));
+        recapPrice = Number(underAge_Ticket.toFixed(2)).innerHTML;
     } else if (selectAge == overAge) {
-        console.log(Number(ticketPrice.toFixed(2)));
+        recapPrice = Number(ticketPrice.toFixed(2));
 
     }
 })
