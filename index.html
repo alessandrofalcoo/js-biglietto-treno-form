@@ -11,18 +11,33 @@
 </head>
 
 <body>
-    <div class="info">
-        <h2>Nome Cognome</h2>
-        <input type="text" id="name">
-        <h2>Km da percorrere</h2>
-        <input type="number" id="km">
-        <select name="" id="">
-            <option value=""></option>
+    <div class="container">
 
-        </select>
+        <h2>Nome cognome</h2>
+        <div class="mb-3">
+            <label for="username" class="form-label"></label>
+            <input type="text" class="form-control" name="username" id="username" aria-describedby="helpId"
+                placeholder="" />
+        </div>
+        <h2>Km da percorrere</h2>
+        <div class="mb-3">
+            <label for="km" class="form-label"></label>
+            <input type="number" class="form-control" name="km" id="km" aria-describedby="helpId" placeholder="" />
+        </div>
+        <h2>Fascia d'età</h2>
+        <div class="mb-3">
+            <label for="age" class="form-label"></label>
+            <select class="form-select form-select-lg" name="age" id="age">
+                <option value="overage" id="overage">Maggiorenne</option>
+                <option value="underage" id="underage">Minorenne</option>
+                <option value="over_sixtyFive" id="over_sixtyFive">Over 65</option>
+            </select>
+        </div>
+        <button id="generate">Genera</button>
     </div>
 
-    <button>Genera</button>
+
+
 
     <script src="./main.js"></script>
 </body>
